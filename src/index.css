@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Cairo:wght@400;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Cairo", ui-sans-serif, system-ui, sans-serif;
+  --color-bento-bg: #030712;
+  --color-bento-card: #0f172a;
+  --color-bento-border: #1e293b;
+  --color-bento-accent: #3b82f6;
+  --color-bento-text: #f8fafc;
+  --color-bento-muted: #94a3b8;
+  --animate-pulse-slow: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+  @keyframes pulse-slow {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.8;
+    }
+  }
+}
+
+body {
+  background-color: var(--color-bento-bg);
+  color: var(--color-bento-text);
+  margin: 0;
+}
